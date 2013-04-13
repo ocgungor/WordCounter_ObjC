@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5674C755171A0ED10046E9C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5674C754171A0ED10046E9C2 /* Foundation.framework */; };
+		5674C758171A0ED10046E9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C757171A0ED10046E9C2 /* main.m */; };
+		5674C75C171A0ED10046E9C2 /* WordCounter_ObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5674C75B171A0ED10046E9C2 /* WordCounter_ObjC.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5674C74F171A0ED10046E9C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5674C75C171A0ED10046E9C2 /* WordCounter_ObjC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5674C751171A0ED10046E9C2 /* WordCounter_ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WordCounter_ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
+		5674C754171A0ED10046E9C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5674C757171A0ED10046E9C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5674C75A171A0ED10046E9C2 /* WordCounter_ObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordCounter_ObjC-Prefix.pch"; sourceTree = "<group>"; };
+		5674C75B171A0ED10046E9C2 /* WordCounter_ObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WordCounter_ObjC.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5674C74E171A0ED10046E9C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5674C755171A0ED10046E9C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5674C748171A0ED10046E9C2 = {
+			isa = PBXGroup;
+			children = (
+				5674C756171A0ED10046E9C2 /* WordCounter_ObjC */,
+				5674C753171A0ED10046E9C2 /* Frameworks */,
+				5674C752171A0ED10046E9C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5674C752171A0ED10046E9C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5674C751171A0ED10046E9C2 /* WordCounter_ObjC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5674C753171A0ED10046E9C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5674C754171A0ED10046E9C2 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5674C756171A0ED10046E9C2 /* WordCounter_ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				5674C757171A0ED10046E9C2 /* main.m */,
+				5674C75B171A0ED10046E9C2 /* WordCounter_ObjC.1 */,
+				5674C759171A0ED10046E9C2 /* Supporting Files */,
+			);
+			path = WordCounter_ObjC;
+			sourceTree = "<group>";
+		};
+		5674C759171A0ED10046E9C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5674C75A171A0ED10046E9C2 /* WordCounter_ObjC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5674C750171A0ED10046E9C2 /* WordCounter_ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5674C75F171A0ED10046E9C2 /* Build configuration list for PBXNativeTarget "WordCounter_ObjC" */;
+			buildPhases = (
+				5674C74D171A0ED10046E9C2 /* Sources */,
+				5674C74E171A0ED10046E9C2 /* Frameworks */,
+				5674C74F171A0ED10046E9C2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordCounter_ObjC;
+			productName = WordCounter_ObjC;
+			productReference = 5674C751171A0ED10046E9C2 /* WordCounter_ObjC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5674C749171A0ED10046E9C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oguzhan Gungor";
+			};
+			buildConfigurationList = 5674C74C171A0ED10046E9C2 /* Build configuration list for PBXProject "WordCounter_ObjC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5674C748171A0ED10046E9C2;
+			productRefGroup = 5674C752171A0ED10046E9C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5674C750171A0ED10046E9C2 /* WordCounter_ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5674C74D171A0ED10046E9C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5674C758171A0ED10046E9C2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5674C75D171A0ED10046E9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5674C75E171A0ED10046E9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5674C760171A0ED10046E9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordCounter_ObjC/WordCounter_ObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5674C761171A0ED10046E9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordCounter_ObjC/WordCounter_ObjC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5674C74C171A0ED10046E9C2 /* Build configuration list for PBXProject "WordCounter_ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5674C75D171A0ED10046E9C2 /* Debug */,
+				5674C75E171A0ED10046E9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5674C75F171A0ED10046E9C2 /* Build configuration list for PBXNativeTarget "WordCounter_ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5674C760171A0ED10046E9C2 /* Debug */,
+				5674C761171A0ED10046E9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5674C749171A0ED10046E9C2 /* Project object */;
+}
