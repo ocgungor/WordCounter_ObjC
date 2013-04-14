@@ -1,39 +1,5 @@
-WordCounter_ObjC
-================
-
-Simple Word Counter example written in Objective-C
-
-
-Documentation
-==============
-
-Constructor to count the words in a given text string
-```
-- initWithString: (NSString *) text;		
-```
-Do the actual counting of lines, words, and characters
-```
-- count;									
-
-```
-Return the number of lines counted
-```
-- (int) lines;
-```
-Return the number of words counted
-```
-- (int) words;
-```
-Return the number of characters counted
-```
-- (int) characters;	
-```
-
-Copyright
-==============
-```
 /*
- * WordCounter_ObjC
+ * WordCounter.h
  *
  * Created by Oguzhan Cansin Gungor on 15/04/13.
  *
@@ -67,4 +33,28 @@ Copyright
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-```
+
+
+#import <Foundation/Foundation.h>
+
+@interface WordCounter: NSObject
+{
+	NSString *content;			
+	int nLines, nWords, nChars;
+}
+
+//Constructor to count the words in a given text string
+- initWithString: (NSString *) text;
+
+//Do the actual counting of lines, words, and characters
+- count;
+
+//Return the number of lines counted
+- (int) lines;
+
+//Return the number of words counted
+- (int) words;
+
+//Return the number of characters counted
+- (int) characters;
+@end

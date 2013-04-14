@@ -1,39 +1,5 @@
-WordCounter_ObjC
-================
-
-Simple Word Counter example written in Objective-C
-
-
-Documentation
-==============
-
-Constructor to count the words in a given text string
-```
-- initWithString: (NSString *) text;		
-```
-Do the actual counting of lines, words, and characters
-```
-- count;									
-
-```
-Return the number of lines counted
-```
-- (int) lines;
-```
-Return the number of words counted
-```
-- (int) words;
-```
-Return the number of characters counted
-```
-- (int) characters;	
-```
-
-Copyright
-==============
-```
 /*
- * WordCounter_ObjC
+ * WordCounter.m
  *
  * Created by Oguzhan Cansin Gungor on 15/04/13.
  *
@@ -67,4 +33,77 @@ Copyright
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-```
+
+
+#import "WordCounter.h"
+#include <stdio.h>
+
+@implementation WordCounter
+
+- initWithString: (NSString *) text
+{
+	if (!(self = [self init]))		
+		return nil;
+
+	content = text;				
+	
+	return self;
+}
+
+
+
+- count						
+{
+	nChars = (int)[content length];		
+
+	NSScanner *reader = [NSScanner scannerWithString: content];
+	
+	if (reader == nil) return nil;		// no content?
+	
+	// only skip white space characters (not new lines)
+	[reader setCharactersToBeSkipped:
+		[NSCharacterSet whitespaceCharacterSet]];
+
+	while (![reader isAtEnd])
+	{
+		NSString *line;			
+
+		[reader scanUpToString: @"\n" intoString: &line];
+		nLines++;
+		
+		NSScanner *lineScanner = [NSScanner scannerWithString: line];
+
+		if (lineScanner == nil) return nil;
+
+		while (![lineScanner isAtEnd])
+		{
+			if ([lineScanner scanUpToCharactersFromSet:
+			     [NSCharacterSet whitespaceAndNewlineCharacterSet]
+							intoString: NULL])
+				nWords++;
+		}
+
+		// skip the new line character
+		[reader scanString: @"\n" intoString: NULL];
+	}
+	
+	return self;
+}
+
+
+- (int) lines
+{
+	return nLines;
+}
+
+
+- (int) words
+{
+	return nWords;
+}
+
+- (int) characters
+{
+	return nChars;
+}
+@end

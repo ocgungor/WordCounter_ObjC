@@ -10,6 +10,7 @@
 		5674C755171A0ED10046E9C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5674C754171A0ED10046E9C2 /* Foundation.framework */; };
 		5674C758171A0ED10046E9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674C757171A0ED10046E9C2 /* main.m */; };
 		5674C75C171A0ED10046E9C2 /* WordCounter_ObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5674C75B171A0ED10046E9C2 /* WordCounter_ObjC.1 */; };
+		56E44B49171A29E500550078 /* WordCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E44B48171A29E500550078 /* WordCounter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		5674C757171A0ED10046E9C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5674C75A171A0ED10046E9C2 /* WordCounter_ObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordCounter_ObjC-Prefix.pch"; sourceTree = "<group>"; };
 		5674C75B171A0ED10046E9C2 /* WordCounter_ObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WordCounter_ObjC.1; sourceTree = "<group>"; };
+		56B35F8C171B530800EA4A79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		56E44B47171A29E500550078 /* WordCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordCounter.h; path = ../WordCounter.h; sourceTree = "<group>"; };
+		56E44B48171A29E500550078 /* WordCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordCounter.m; path = ../WordCounter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,9 @@
 		5674C748171A0ED10046E9C2 = {
 			isa = PBXGroup;
 			children = (
+				56B35F8C171B530800EA4A79 /* README.md */,
+				56E44B47171A29E500550078 /* WordCounter.h */,
+				56E44B48171A29E500550078 /* WordCounter.m */,
 				5674C756171A0ED10046E9C2 /* WordCounter_ObjC */,
 				5674C753171A0ED10046E9C2 /* Frameworks */,
 				5674C752171A0ED10046E9C2 /* Products */,
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5674C758171A0ED10046E9C2 /* main.m in Sources */,
+				56E44B49171A29E500550078 /* WordCounter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +248,7 @@
 				5674C761171A0ED10046E9C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
